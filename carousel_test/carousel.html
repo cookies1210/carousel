@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>旋转木马图片轮播</title>
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/carousel.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="poster_main"  data_setting='{
+                                                                "width":1000,
+                                                                "height":344,
+                                                                "posterwidth":680,
+                                                                "posterheight":344,
+                                                                "scale":0.9,
+                                                                "speed":50,
+                                                                "varicalAlign":"center",
+                                                                "autoplay":"true",
+                                                                "autospeed":3000
+                                                                }' >
+        <div class="poster_btn poster_prev_btn"></div>
+        <ul class="poster_list">
+            <li class="poster_item"><a><img src="images/1.jpg"/></a></li>
+            <li class="poster_item"><a><img src="images/2.jpg"/></a></li>
+            <li class="poster_item"><a><img src="images/3.jpg"/></a></li>
+            <li class="poster_item"><a><img src="images/4.jpg"/></a></li>
+            <li class="poster_item"><a><img src="images/5.jpg"/></a></li>
+            <li class="poster_item"><a><img src="images/6.jpg"/></a></li>
+            <li class="poster_item"><a><img src="images/7.jpg"/></a></li>
+        </ul>
+        <div class="poster_btn poster_next_btn"></div>
+    </div>
+
+    <script>
+        $(function(){
+        Carousel.init($(".poster_main"));
+        })
+    </script>
+</body>
+</html>

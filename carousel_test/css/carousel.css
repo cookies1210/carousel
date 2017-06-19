@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style-type: none;
+}
+.poster_main{
+    width:1000px;
+    height:344px;
+    position: relative;
+    margin:auto;
+    top:50px;
+
+}
+.poster_main .poster_list{
+    width:1000px;
+    width:344px;
+}
+.poster_main .poster_btn{
+    position: absolute;
+    top:0;
+   /* width:100px;
+    height:344px;*/
+    cursor:pointer;
+    opacity:0.8;
+    z-index: 10;
+
+}
+.poster_main .poster_prev_btn{
+
+    background:  url(../images/prev.png) no-repeat center center;
+}
+.poster_main .poster_next_btn{
+
+    background: url(../images/next.png) no-repeat center center;
+}
+.poster_main .poster_list .poster_item{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.poster_main .poster_list .poster_item img{
+    display: block;
+    width:100%;
+    height:100%;
+
+}
